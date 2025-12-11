@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CapForEat</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.webmanifest">
+  <!-- Theme color for address bar -->
+  <meta name="theme-color" content="#16a34a">
+  <!-- Apple touch icon -->
+  <link rel="apple-touch-icon" href="/pwa-192x192.png">
+  <!-- Prevent Chrome from showing the URL bar on standalone mode -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <script type="importmap">
 {
   "imports": {
@@ -21,6 +31,6 @@
 </head>
 <body>
   <div id="root"></div>
-  <script type="module" src="index.tsx"></script>
+  <script type="module" src="app.tsx"></script>
 </body>
 </html>
